@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "Engine.h"
+#include "Game.h"
 
-void Engine::input()
+void Game::input()
 {
     //Close window
     if (Keyboard::isKeyPressed(Keyboard::Escape))
     {
-        m_Window.close();
+        Window.close();
     }
     //Some movement
     if (Keyboard::isKeyPressed(Keyboard::A))

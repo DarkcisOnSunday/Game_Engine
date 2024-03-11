@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Bob.cpp">
@@ -30,14 +30,17 @@
     <ClCompile Include="Update.cpp">
       <Filter>Исходные файлы\engine</Filter>
     </ClCompile>
-    <ClCompile Include="Draw.cpp">
+    <ClCompile Include="Render.cpp">
       <Filter>Исходные файлы\engine</Filter>
     </ClCompile>
-    <ClCompile Include="Engine.cpp">
+    <ClCompile Include="Game.cpp">
       <Filter>Исходные файлы\engine</Filter>
     </ClCompile>
     <ClCompile Include="Input.cpp">
       <Filter>Исходные файлы\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="platform.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,10 +67,13 @@
     <ClInclude Include="Bob.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Engine.h">
+    <ClInclude Include="Game.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

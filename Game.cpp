@@ -1,32 +1,34 @@
 #include "stdafx.h"
-#include "Engine.h"
+#include "Game.h"
 
 
-Engine::Engine()
+Game::Game()
 {
+	//Creating a window
 	Vector2u resolution;
 	resolution.x = VideoMode::getDesktopMode().width;
 	resolution.y = VideoMode::getDesktopMode().height;
 
-	m_Window.create(VideoMode(resolution.x, resolution.y),
+	Window.create(VideoMode(resolution.x, resolution.y),
 		"Game Engine",
 		Style::Fullscreen);
 
-	m_BackgroundTexture.loadFromFile("sourse\\background.jpg");
-	m_BackgroundSprite.setTexture(m_BackgroundTexture);
+	//Background sprite
+	BackgroundTexture.loadFromFile("sourse\\background.jpg");
+	BackgroundSprite.setTexture(BackgroundTexture);
 }
 
-void Engine::start()
+void Game::start()
 {
 	Clock clock;
 
-	while (m_Window.isOpen()) {
+	while (winopen()){
 		Time dt = clock.restart();
 
 		float dtAsSeconds = dt.asSeconds();
 
 		input(); //Cacth all inputs
 		update(dtAsSeconds); //Update game time
-		draw(); //Draw window again
+		render(); //Draw window again
 	}
 }

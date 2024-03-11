@@ -1,9 +1,9 @@
 #include "stdafx.h"
-#include "Engine.h"
+#include "Game.h"
 
 using namespace sf;
 
-void Engine::update(float dtAsSeconds)
+void Game::update(float dtAsSeconds)
 {
     m_Bob.update(dtAsSeconds);
 }
